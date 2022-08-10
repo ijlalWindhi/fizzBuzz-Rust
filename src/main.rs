@@ -12,5 +12,5 @@ fn fizz_buzz(x: i32) {
     }
 }
 fn main() {
-    fizz_buzz(100);
+    fizz_buzz(101);
 }

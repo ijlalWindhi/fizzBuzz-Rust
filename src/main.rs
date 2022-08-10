@@ -11,6 +11,19 @@ fn fizz_buzz(x: i32) {
         }
     }
 }
+
+fn palindrome_checker(_x: &str) {
+    let mut value_reversed = String::new();
+    for c in _x.chars().rev() {
+        value_reversed.push(c);
+    }
+    if _x == value_reversed {
+        println!("{} ini palindrome", _x);
+    } else {
+        println!("{} ini bukan palindrome", _x);
+    }
+}
 fn main() {
-    fizz_buzz(101);
+    // fizz_buzz(101);
+    palindrome_checker("kakak");
 }

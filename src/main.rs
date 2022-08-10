@@ -13,10 +13,16 @@ fn fizz_buzz(x: i32) {
 }
 
 fn palindrome_checker(_x: &str) {
+    // membuat string kosong
     let mut value_reversed = String::new();
+
+    // membuat for loop untuk mengambil karakter dari parameter untuk dimasukkan pada string kosong yang sudah dibuat
+    // yang kemudian direverse
     for c in _x.chars().rev() {
         value_reversed.push(c);
     }
+
+    // mengecek apakah string yang dibuat sama dengan string dari parameter
     if _x == value_reversed {
         println!("{} ini palindrome", _x);
     } else {
